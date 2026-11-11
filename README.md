@@ -15,5 +15,18 @@ Expo (React Native + TypeScript) app that crops a photo to the Schengen visa for
   Green guides show crown, chin and head oval (head must be 32–36 mm of 45 mm).
 - "Create" crops + resizes with expo-image-manipulator, then share/save (download on web).
 
+## Background whitening
+No ML: estimates the background colour from the image border, flood-fills similar pixels
+and blends them to white (3 sensitivity levels). Works for plain, light backgrounds;
+busy backgrounds are not supported. If it eats into the face, lower the sensitivity.
+
+## Print sheets
+Tiles the finished photo on a white 10×15 cm (6 photos) or 13×18 cm sheet at 300 dpi,
+with thin grey cut guides. Print at actual size (no scaling).
+
+## Tests
+    npm test              # whitening + sheet layout, plain Node
+    npm run typecheck
+
 ## Not included yet
-- Background removal / whitening, automatic face detection, print sheet (4×6").
+- Automatic face detection / head-size check, real background segmentation (ML).

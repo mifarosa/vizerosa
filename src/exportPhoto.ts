@@ -12,11 +12,11 @@ export async function renderPhoto(uri: string, rect: CropRect) {
 }
 
 /** Web: triggers a download. Native: opens the share sheet (includes "Save Image"). */
-export async function deliver(uri: string) {
+export async function deliver(uri: string, filename = 'vizerosa-35x45.jpg') {
   if (Platform.OS === 'web') {
     const a = document.createElement('a');
     a.href = uri;
-    a.download = 'vizerosa-35x45.jpg';
+    a.download = filename;
     document.body.appendChild(a);
     a.click();
     a.remove();
