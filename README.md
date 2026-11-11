@@ -1,4 +1,4 @@
-# Vizeroza
+# Vizerosa
 
 Schengen vize fotoğrafı hazırlayıcı: 35×45 mm, 300 dpi, kılavuzlu kırpma (Expo / React Native).
 

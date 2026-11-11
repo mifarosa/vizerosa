@@ -16,7 +16,7 @@ export async function deliver(uri: string) {
   if (Platform.OS === 'web') {
     const a = document.createElement('a');
     a.href = uri;
-    a.download = 'vizeroza-35x45.jpg';
+    a.download = 'vizerosa-35x45.jpg';
     document.body.appendChild(a);
     a.click();
     a.remove();

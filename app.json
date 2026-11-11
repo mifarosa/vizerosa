@@ -1,19 +1,19 @@
 {
   "expo": {
-    "name": "Vizeroza",
-    "slug": "vizeroza",
+    "name": "Vizerosa",
+    "slug": "vizerosa",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.mifarosa.vizeroza",
+      "bundleIdentifier": "com.mifarosa.vizerosa",
       "infoPlist": {
         "NSCameraUsageDescription": "Used to take your visa photo.",
         "NSPhotoLibraryUsageDescription": "Used to pick a photo for your visa picture."
       }
     },
-    "android": { "package": "com.mifarosa.vizeroza" },
+    "android": { "package": "com.mifarosa.vizerosa" },
     "web": { "bundler": "metro" },
     "plugins": [
       "expo-image-picker",
